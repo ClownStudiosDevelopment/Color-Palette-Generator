@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Palette Generator</h1>
+        <div class="input-group">
+            <label for="color-count">Number of Colors:</label>
+            <input type="number" id="color-count" min="1" max="20" value="8">
+        </div>
+
+        <div class="toggle-group">
+            <label for="toggle-mode">Add to existing palette</label>
+            <label class="switch">
+                <input type="checkbox" id="toggle-mode">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <button id="generate-btn">Generate Palette</button>
+        <button id="copy-all-btn">Copy All Colors</button>
+
+        <div id="palette" class="palette-box"></div>
+
+        <div id="dismissible-note" class="note">
+            <span>Please click on a color or the "Copy All Colors" button to copy the color(s).</span>
+            <button id="close-note">X</button>
+            <label>
+                <input type="checkbox" id="never-show-again"> Never show again
+            </label>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Clown Studio. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
